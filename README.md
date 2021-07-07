@@ -8,9 +8,17 @@ tokenize is written in Elixir and will require Elixir > 1.11.
 
 ## Installation
 
-* Start by cloning the repo at https://github.com/cmmorrow/tokenize.
-* Run `mix escript.build` from the command line to create the tokenize binary.
+Start by cloning the repo at https://github.com/cmmorrow/tokenize.
+
+**To install tokenize locally**:
+
+* Run `mix deps.get; mix escript.build` from the command line to install dependencies and create the tokenize binary.
 * Verify tokenize is installed properly by running `./tokenize` with no arguments.
+
+**To install tokenize with Docker**:
+
+* Run `docker build -t tokenize .`
+* Verify tokenize is installed properly by running `docker run -it --rm tokenize` with no arguments.
 
 ## Usage
 
