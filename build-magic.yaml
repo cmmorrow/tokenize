@@ -1,0 +1,10 @@
+build-magic:
+  - stage:
+      name: build
+      commands:
+        - build: mix compile
+        - build: mix escript.build
+  - stage:
+      name: test
+      commands:
+        - test: mix test
